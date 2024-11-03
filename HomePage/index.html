@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!--   Navbar   -->
+    <div id="links">
+      <a href="./index.html">Home</a>
+      <a
+        href="/Practice Code/JOB-APPLICATION/ApplicationsPage/applications.html"
+        >Applications</a
+      >
+      <a href="/Practice Code/JOB-APPLICATION/BookmarksPage/bookmark.html"
+        >Bookmarks</a
+      >
+    </div>
+
+    <!-- Application form -->
+
+    <form id="form">
+      <h2>Fill the details to apply for the Job</h2>
+
+      <label>Name</label>
+      <br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Name"
+        required
+      />
+      <br />
+      <label>Email</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter email"
+        required
+      />
+      <br />
+      <label>Select Role:</label>
+      <br />
+      <select id="role">
+        <option value="full-stack">Full Stack</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+      </select>
+      <br />
+      <label>Expected Salary:</label>
+      <br />
+      <input
+        type="number"
+        name="salary"
+        id="salary"
+        placeholder="Enter Expected Salary"
+        required
+      />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+<!-- javascript  -->
+<script src="./index.js"></script>

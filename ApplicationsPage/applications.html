@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Applications</title>
+    <link rel="stylesheet" href="./applications.css" />
+  </head>
+  <body>
+    <div class="Navbar">
+      <div id="links">
+        <a href="/Practice Code/JOB-APPLICATION/HomePage/index.html">Home</a>
+        <a href="./applications.html">Applications</a>
+        <a href="/Practice Code/JOB-APPLICATION/BookmarksPage/bookmark.html"
+          >Bookmarks</a
+        >
+      </div>
+    </div>
+    <h1>This page shows the submitted applications</h1>
+
+    <div class="sort">
+      <select name="sortName" id="sortName" onchange="handleNameSort()">
+        <option value="select-role">Sort by Name</option>
+        <option value="atoz">A to Z</option>
+        <option value="ztoa">Z to A</option>
+      </select>
+
+      <select name="sortSalary" id="sortSalary" onchange="handleSalarySort()">
+        <option value="select-role">Sort by Salary</option>
+        <option value="LTH">low to high</option>
+        <option value="HTL">high to low</option>
+      </select>
+
+      <select name="filter" id="filter" onchange="handleFilter()">
+        <option value="select-role">Filter Category</option>
+        <option value="full-stack">Full Stack</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+      </select>
+    </div>
+    <br />
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Applied Role</th>
+            <th>Expected Salary</th>
+            <th>Add to Bookmark</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <!--   Here the data comes  from JS -->
+    </main>
+  </body>
+</html>
+
+<script src="./applications.js"></script>
